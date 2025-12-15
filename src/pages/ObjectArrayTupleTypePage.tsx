@@ -56,7 +56,7 @@ let user: {name: string; age?: number; isAdmin: boolean } = {
 
 user={
   name: "Bob",
-  age:40
+  age: 40,
   isAdmin: false,
 }
             `}
@@ -91,8 +91,9 @@ const products: [string, number, boolean][] = [
 function getProductNamesAndPrices(
   products: [string, number, boolean][]
 ): [string, number][] {
-  // 여기에 구현
-  return products.map(([name, price]) => [name, price]);
+// 상품이름을 반환하기 위해 string, 가격만 반환하기 위해 number
+// 강제 하기 위해 튜플을 쓰자  
+  return products.map((product) => [product.name, product.price]);
 }
 
 // 2. 재고가 있는 상품만 반환,리턴타입 정의필요 
@@ -100,7 +101,7 @@ function getAvailableProducts(
   products: [string, number, boolean][]
 ): [string, number, boolean][] {
   // 여기에 구현
-  return products.filter(([name, price, inStock]) => inStock);
+  return products.filter(product) => product.isAvailable);
 }
 
 // 테스트 코드
@@ -118,17 +119,17 @@ console.log(getAvailableProducts(products));
           question="사용자 정보를 업데이트하는 함수를 작성하세요. 나이가 제공되지 않으면 기본값으로 18을 사용하세요"
           code={`
 //매개변수, 리턴 타입 정의 필요
-function updateUser(user: { name: string; age?: number }):{
-   name: string;
-   age: number;
-} {
-    return { ...user, age: user.age ?? 18 };
-}
+function updateUser(
+  user: { name: string; age?: number }
+): { name: string; age: number } {
   // 나이가 제공되지 않으면 18로 설정
+  return { ...user, age: user.age ?? 18 };
+  
 }
 
 // 테스트 코드
 console.log(updateUser({ name: "Charlie" })); // { name: "Charlie", age: 18 }
+
 console.log(updateUser({ name: "Dana", age: 25 })); // { name: "Dana", age: 25 }
 `}
         />
