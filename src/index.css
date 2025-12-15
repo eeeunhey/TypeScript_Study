@@ -1,0 +1,15 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css");
+@import url("https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css");
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  overscroll-behavior: none;         
+  -webkit-tap-highlight-color: transparent;
+}
+
+button, a {
+  touch-action: manipulation;
+}

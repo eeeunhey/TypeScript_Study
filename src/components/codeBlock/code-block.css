@@ -1,0 +1,48 @@
+.code {
+  max-width: 900px;
+  margin: 0 auto;
+  color: #0f172a;
+}
+
+/* 코드 헤더 */
+.codeHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+/* 복사 버튼 */
+.copyBtn {
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.copyBtn:hover {
+  background: #f8fafc;
+}
+
+/* 코드 블럭 */
+.codeBlock {
+  margin: 0;
+  padding: 12px;
+  border-radius: 10px;
+  background: #0b1020;
+  color: #e5e7eb;
+  font-size: 12px;
+  line-height: 1.6;
+  overflow-x: auto;
+}
+
+/* 문제 */
+.question {
+  padding: 8px 5px;
+  font-size: 15px;
+  color: #1a2330;
+  white-space: pre-line;
+}

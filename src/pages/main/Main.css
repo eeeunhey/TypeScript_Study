@@ -1,0 +1,112 @@
+/* 전체 페이지 */
+.page {
+  min-height: 100vh;
+  padding: 32px 16px;
+  background: radial-gradient(circle at top, #f7f5ff 0, #ffffff 60%, #f5fbff 100%);
+  color: #0f172a;
+}
+
+/* 섹션 컨테이너 */
+.taskSection {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+/* 헤더 */
+.taskHeader {
+  margin-bottom: 14px;
+}
+
+.taskTitle {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.taskSub {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* 카드 리스트: 모바일 우선 → 자동 그리드 */
+.taskList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+@media (min-width: 720px) {
+  .taskList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .taskList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+.taskButton {
+  all: unset;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 14px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.taskButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.12);
+  border-color: rgba(99, 102, 241, 0.35);
+}
+
+.taskButton:active {
+  transform: translateY(0px);
+}
+
+/* 날짜: 뱃지 느낌 */
+.taskDate {
+  width: fit-content;
+  font-size: 12px;
+  font-weight: 800;
+  color: #475569;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+/* task(메인) */
+.taskMain {
+  font-size: 14px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.45;
+}
+
+/* lecture(보조) */
+.taskLecture {
+  font-size: 12px;
+  color: #64748b;
+  line-height: 1.5;
+
+  /* 너무 길면 3줄까지만 보이게(깔끔함) */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
