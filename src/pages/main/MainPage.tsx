@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { CURRICULUM } from "../../constants/curriculum.constants";
-import "./main.css";
+import "./main-page.css";
 
 const MainPage = () => {
   return (
