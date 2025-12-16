@@ -4,6 +4,8 @@ import BasicTypePage from "./pages/BasicTypePage";
 import { Header } from "./components";
 import ObjectArrayTupleTypePage from "./pages/ObjectArrayTupleTypePage";
 import InterfecePage from "./pages/InterfecePage";
+import EnumPage from "./pages/EnumPage";
+import AdvancedPage from "./pages/AdvancedPage";
 
 const App = () => {
   return (
@@ -13,8 +15,10 @@ const App = () => {
         <Route>
           <Route path="/" element={<MainPage />} />
           <Route path="/study/basicType" element={<BasicTypePage />} />
-          <Route path="/study/ObjectArrayTuple" element={<ObjectArrayTupleTypePage />} />
-          <Route path="/study/InterfecePage" element={<InterfecePage />} />
+          <Route path="/study/objectArrayTuple" element={<ObjectArrayTupleTypePage />} />
+          <Route path="/study/interfecePage" element={<InterfecePage />} />
+          <Route path="/study/eunmPage" element={< EnumPage/>} />
+          <Route path="/study/adavancedType" element={< AdvancedPage/>} />
 
         </Route>
       </Routes>
