@@ -22,7 +22,7 @@ export const CURRICULUM = [
       date: "2025-12-16",
       lecture: "  4. 고급타입 - enum",
       task: "4. enum 정리",
-      path:"/study/interfecePage"
+      path:"/study/eunmPage"
     },
     {
       date: "2025-12-16",
