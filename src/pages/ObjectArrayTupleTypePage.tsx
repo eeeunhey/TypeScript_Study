@@ -155,12 +155,13 @@ const products: {name: string; price: number; category?: string}[] = [
 //매개변수, 리턴 타입 정의 필요
 function getProductsByCategory(category: string): string[] {
   // 여기에 구현
-    return products.reduce((result: string[], product) => {
-    if (product.category === category) {
-       result.push(product.name);
+
+  return products.reduce((result: string[], product) => {
+    if(product.category === category) {
+      result = result.concat(product.name);
     }
     return result;
-  },[]);
+  }, []);
 }
 
 // 테스트 코드
