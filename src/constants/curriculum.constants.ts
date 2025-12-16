@@ -10,25 +10,25 @@ export const CURRICULUM = [
       date: "2025-12-15",
       lecture: "2. 객체 & 배열 & 튜플 타입",
       task: "2. 객체 & 배열 & 튜플 타입 문제",
-      path: "/study/ObjectArrayTuple"
+      path: "/study/objectArrayTuple"
     },
     {
       date: "2025-12-16",
       lecture: "3. type, interface  4. 고급타입 - enum  5. 고급타입2 - any, unknown, void, never~",
       task: "3. type, interface 문제  5. any, unknown, void, never~ 문제",
-      path:"/study/InterfecePage"
+      path:"/study/interfecePage"
     },
         {
       date: "2025-12-16",
       lecture: " 4. 고급타입 - enum  5. 고급타입2 - any, unknown, void, never~",
       task: "3. type, interface 문제  5. any, unknown, void, never~ 문제",
-      path:"/study/InterfecePage"
+      path:"/study/interfecePage"
     },
     {
       date: "2025-12-17",
       lecture: "6. 교차타입  7. 유니온타입 - 자유에는 책임  8. 타입 좁히기  9. 유니온 타입의 함정",
       task: "6. 교차타입 문제  9. 유니온 타입의 함정 문제",
-      path: "/study/day3"
+      path: "/study/enumPage"
     },
     {
       date: "2025-12-18",
