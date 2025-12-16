@@ -18,11 +18,17 @@ export const CURRICULUM = [
       task: "3. type, interface 문제  5. any, unknown, void, never~ 문제",
       path:"/study/interfecePage"
     },
-        {
+    {
       date: "2025-12-16",
-      lecture: " 4. 고급타입 - enum  5. 고급타입2 - any, unknown, void, never~",
-      task: "3. type, interface 문제  5. any, unknown, void, never~ 문제",
+      lecture: "  4. 고급타입 - enum",
+      task: "4. enum 정리",
       path:"/study/interfecePage"
+    },
+    {
+      date: "2025-12-16",
+      lecture: " 5. 고급타입2 - any, unknown, void, never~",
+      task: "  5. any, unknown, void, never~ 문제",
+      path:"/study/adavancedType"
     },
     {
       date: "2025-12-17",
