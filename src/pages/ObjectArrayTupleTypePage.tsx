@@ -87,21 +87,29 @@ const products: [string, number, boolean][] = [
   ["Book", 20, true],
 ];
 
+const products: [string, number, boolean][] = [
+  ["Laptop", 1000, true],
+  ["Shoes", 50, false],
+  ["Book", 20, true],
+];
+
 // 1. 상품 이름과 가격만 반환,리턴타입 정의필요 
 function getProductNamesAndPrices(
   products: [string, number, boolean][]
 ): [string, number][] {
 // 상품이름을 반환하기 위해 string, 가격만 반환하기 위해 number
 // 강제 하기 위해 튜플을 쓰자  
-  return products.map((product) => [product.name, product.price]);
+  return products.map(([name, price]) => [name, price]);
 }
 
 // 2. 재고가 있는 상품만 반환,리턴타입 정의필요 
 function getAvailableProducts(
   products: [string, number, boolean][]
 ): [string, number, boolean][] {
-  // 여기에 구현
-  return products.filter(product) => product.isAvailable);
+  // 재고가 true 인것만 반환하니깐
+  // 이미 어차피 필터니깐 name, price 없어도 될 거 같아 제거
+  // 재고 있는거만 확인 하니깐 boolean 만 확인해서 그 조건 해당하는것만 반환하자
+  return products.filter(([,,isAvailable]) => isAvailable);
 }
 
 // 테스트 코드
@@ -124,7 +132,6 @@ function updateUser(
 ): { name: string; age: number } {
   // 나이가 제공되지 않으면 18로 설정
   return { ...user, age: user.age ?? 18 };
-  
 }
 
 // 테스트 코드

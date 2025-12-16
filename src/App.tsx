@@ -3,6 +3,7 @@ import MainPage from "./pages/main/MainPage";
 import BasicTypePage from "./pages/BasicTypePage";
 import { Header } from "./components";
 import ObjectArrayTupleTypePage from "./pages/ObjectArrayTupleTypePage";
+import InterfecePage from "./pages/InterfecePage";
 
 const App = () => {
   return (
@@ -13,6 +14,8 @@ const App = () => {
           <Route path="/" element={<MainPage />} />
           <Route path="/study/basicType" element={<BasicTypePage />} />
           <Route path="/study/ObjectArrayTuple" element={<ObjectArrayTupleTypePage />} />
+          <Route path="/study/InterfecePage" element={<InterfecePage />} />
+
         </Route>
       </Routes>
     </div>
