@@ -1,4 +1,4 @@
-import React from "react";
+
 import { CodeBlock, StudyTemplate } from "../components";
 
 const AdvancedPage = () => {
