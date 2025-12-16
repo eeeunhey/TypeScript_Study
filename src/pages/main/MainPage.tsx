@@ -13,7 +13,9 @@ const MainPage = () => {
 
         <div className="taskList">
           {CURRICULUM.map((study) => (
-            <Link to={study.path} className="taskButton">
+            <Link 
+            key={study.path}  
+            to={study.path} className="taskButton">
               <div className="taskDate">{study.date}</div>
               <div className="taskMain">{study.task}</div>
               <div className="taskLecture">{study.lecture}</div>
