@@ -6,6 +6,8 @@ import ObjectArrayTupleTypePage from "./pages/ObjectArrayTupleTypePage";
 import InterfecePage from "./pages/InterfecePage";
 import EnumPage from "./pages/EnumPage";
 import AdvancedPage from "./pages/AdvancedPage";
+import IntersectionPage from "./pages/IntersectionPage";
+import UnionTypePage from "./pages/UnionTypePage";
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
           <Route path="/study/interfecePage" element={<InterfecePage />} />
           <Route path="/study/eunmPage" element={< EnumPage/>} />
           <Route path="/study/adavancedType" element={< AdvancedPage/>} />
+          <Route path="/study/intersection" element={< IntersectionPage/>} />
+          <Route path="/study/union" element={< UnionTypePage/>} />
 
         </Route>
       </Routes>

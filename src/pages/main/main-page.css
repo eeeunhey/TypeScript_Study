@@ -89,6 +89,23 @@
   padding: 6px 10px;
   border-radius: 999px;
 }
+.date-0 {
+  background: #e0f2fe;
+  color: #0369a1;
+  border-color: #bae6fd;
+}
+
+.date-1 {
+  background: #ecfeff;
+  color: #0f766e;
+  border-color: #99f6e4;
+}
+
+.date-2 {
+  background: #fef3c7;
+  color: #92400e;
+  border-color: #fde68a;
+}
 
 /* task(메인) */
 .taskMain {
