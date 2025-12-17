@@ -37,6 +37,25 @@ export const CURRICULUM = [
       path: "/study/enumPage"
     },
     {
+      date: "2025-12-17",
+      lecture: "7. 유니온타입 - 자유에는 책임  8. 타입 좁히기  9. 유니온 타입의 함정",
+      task: "6. 교차타입 문제  9. 유니온 타입의 함정 문제",
+      path: "/study/enumPage"
+    },
+        {
+      date: "2025-12-17",
+      lecture: "8. 타입 좁히기  9. 유니온 타입의 함정",
+      task: "6. 교차타입 문제  9. 유니온 타입의 함정 문제",
+      path: "/study/enumPage"
+    },
+
+            {
+      date: "2025-12-17",
+      lecture: "9. 유니온 타입의 함정",
+      task: "  9. 유니온 타입의 함정 문제",
+      path: "/study/enumPage"
+    },
+    {
       date: "2025-12-18",
       lecture: "10. 제네릭 타입 - 타입도 매개변수처럼  11. 제네릭 타입 응용  12. 리터럴 타입 - 문자 그대로",
       task: "11. 제네릭 타입 응용하기 문제  12. 리터럴 타입 문제",
