@@ -8,6 +8,8 @@ import EnumPage from "./pages/EnumPage";
 import AdvancedPage from "./pages/AdvancedPage";
 import IntersectionPage from "./pages/IntersectionPage";
 import UnionTypePage from "./pages/UnionTypePage";
+import GenericPage from "./pages/GenericPage";
+import LiteralPage from "./pages/LiteralPage";
 
 const App = () => {
   return (
@@ -23,6 +25,8 @@ const App = () => {
           <Route path="/study/adavancedType" element={< AdvancedPage/>} />
           <Route path="/study/intersection" element={< IntersectionPage/>} />
           <Route path="/study/union" element={< UnionTypePage/>} />
+          <Route path="/study/generic" element={< GenericPage/>} />
+          <Route path="/study/literal" element={< LiteralPage/>} />
 
         </Route>
       </Routes>
