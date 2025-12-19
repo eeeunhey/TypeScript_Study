@@ -59,9 +59,16 @@ export const CURRICULUM = [
 
     {
       date: "2025-12-19",
-      lecture: "13. 유틸리티 타입 - 더하고 빼고  14. record 타입 - 객체도 유연하게",
-      task: "13. 유틸리티 타입 문제  14. record 타입 문제",
-      path: "/study/day5"
+      lecture: "13. 유틸리티 타입 - 더하고 빼고  ",
+      task: "13. 유틸리티 타입 문제 ",
+      path: "/study/utility"
+    },
+
+        {
+      date: "2025-12-19",
+      lecture: " 14. record 타입 - 객체도 유연하게",
+      task: "14. record 타입 문제",
+      path: "/study/recode"
     },
     {
       date: "2025-12-20",

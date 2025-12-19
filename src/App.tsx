@@ -10,6 +10,8 @@ import IntersectionPage from "./pages/IntersectionPage";
 import UnionTypePage from "./pages/UnionTypePage";
 import GenericPage from "./pages/GenericPage";
 import LiteralPage from "./pages/LiteralPage";
+import UtilitytypePage from "./pages/utilitytypePage";
+import RecordTypePage from "./pages/recordTypePage";
 
 const App = () => {
   return (
@@ -19,15 +21,19 @@ const App = () => {
         <Route>
           <Route path="/" element={<MainPage />} />
           <Route path="/study/basicType" element={<BasicTypePage />} />
-          <Route path="/study/objectArrayTuple" element={<ObjectArrayTupleTypePage />} />
+          <Route
+            path="/study/objectArrayTuple"
+            element={<ObjectArrayTupleTypePage />}
+          />
           <Route path="/study/interfecePage" element={<InterfecePage />} />
-          <Route path="/study/eunmPage" element={< EnumPage/>} />
-          <Route path="/study/adavancedType" element={< AdvancedPage/>} />
-          <Route path="/study/intersection" element={< IntersectionPage/>} />
-          <Route path="/study/union" element={< UnionTypePage/>} />
-          <Route path="/study/generic" element={< GenericPage/>} />
-          <Route path="/study/literal" element={< LiteralPage/>} />
-
+          <Route path="/study/eunmPage" element={<EnumPage />} />
+          <Route path="/study/adavancedType" element={<AdvancedPage />} />
+          <Route path="/study/intersection" element={<IntersectionPage />} />
+          <Route path="/study/union" element={<UnionTypePage />} />
+          <Route path="/study/generic" element={<GenericPage />} />
+          <Route path="/study/literal" element={<LiteralPage />} />
+          <Route path="/study/utility" element={<UtilitytypePage />} />
+          <Route path="/study/recode" element={<RecordTypePage />} />
         </Route>
       </Routes>
     </div>
