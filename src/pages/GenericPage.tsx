@@ -73,7 +73,7 @@ console.log(getFirstElement([])); // undefined
             `}
         code={`
 // 매개변수, 리턴타입 정의 필요 
-function isNumberArray(array: unknown[]): boolean {
+function isNumberArray<T>(array: T[]): boolean {
   // 여기에 구현
    retrun array.every(item => typeof item === "number")
 
