@@ -10,8 +10,9 @@ import IntersectionPage from "./pages/IntersectionPage";
 import UnionTypePage from "./pages/UnionTypePage";
 import GenericPage from "./pages/GenericPage";
 import LiteralPage from "./pages/LiteralPage";
-import UtilitytypePage from "./pages/utilitytypePage";
-import RecordTypePage from "./pages/recordTypePage";
+import UtilitytypePage from "./pages/UtilitytypePage";
+import RecordTypePage from "./pages/RecordTypePage";
+import ExtendsPage from "./pages/ExtendsPage";
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
           <Route path="/study/literal" element={<LiteralPage />} />
           <Route path="/study/utility" element={<UtilitytypePage />} />
           <Route path="/study/recode" element={<RecordTypePage />} />
+          <Route path="/study/Extends" element={<ExtendsPage />} />
         </Route>
       </Routes>
     </div>
