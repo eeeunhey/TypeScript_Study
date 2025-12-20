@@ -10,7 +10,7 @@ import IntersectionPage from "./pages/IntersectionPage";
 import UnionTypePage from "./pages/UnionTypePage";
 import GenericPage from "./pages/GenericPage";
 import LiteralPage from "./pages/LiteralPage";
-import UtilitytypePage from "./pages/UtilitytypePage";
+import UtilitytypePage from "./pages/UtilityTypePage";
 import RecordTypePage from "./pages/RecordTypePage";
 import ExtendsPage from "./pages/ExtendsPage";
 
