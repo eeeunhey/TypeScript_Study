@@ -74,7 +74,7 @@ export const CURRICULUM = [
       date: "2025-12-20",
       lecture: "15. 타입 활용하기 - extends, as, infer  16. 타입스크립트 컴파일러의 원리",
       task: "15. 타입 활용하기 - extends, as, infer 문제",
-      path: "/study/day6"
+      path: "/study/Extends"
     },
     {
       date: "2025-12-21",
